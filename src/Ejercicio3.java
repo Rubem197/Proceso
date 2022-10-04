@@ -1,13 +1,13 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ComprobarProcesoL {
+public class Ejercicio3 {
     public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe el comando de ejecucion:");
+        String[] comando = sc.nextLine().split(" ");
 
-        ProcessBuilder pb = new ProcessBuilder(args);
-
-        pb.command("java", "ProcesoLento");
-
+        ProcessBuilder pb = new ProcessBuilder(comando);
         Process p = pb.start();
         while (p.isAlive()) {
             try {
