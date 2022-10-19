@@ -11,10 +11,5 @@ public class Clase2 {
         for (int i =0 ; i<10; i++){
             listaIp.add(sc.nextLine());
         }
-        for (int i =0 ; i<10; i++){
-            if (Integer.parseInt(listaIp.get(i).substring(0,1)) <224){
-                System.out.println(listaIp.get(i));
-            }
-        }
     }
 }
